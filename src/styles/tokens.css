@@ -1,0 +1,33 @@
+:root {
+  --color-bg: #f6f8fc;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f8fafc;
+  --color-text: #14213d;
+  --color-text-secondary: #52627a;
+  --color-text-muted: #8e9bae;
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-soft: #eff6ff;
+  --color-primary-soft-hover: #dbeafe;
+  --color-border: #dce4ef;
+  --color-border-hover: #b8c7dc;
+  --color-focus: #3b82f6;
+  --color-warning-bg: #fffbeb;
+  --color-warning-border: #fde68a;
+  --color-warning-text: #b45309;
+
+  --radius-card: 20px;
+  --radius-inner: 16px;
+  --radius-control: 12px;
+  --radius-pill: 9999px;
+
+  --shadow-card: 0 8px 28px rgba(20, 33, 61, 0.05);
+  --shadow-hover: 0 12px 36px rgba(20, 33, 61, 0.09);
+  --shadow-modal: 0 20px 48px rgba(20, 33, 61, 0.16);
+
+  --content-width: 1920px;
+  --quiz-card-width: 1360px;
+  --quiz-card-max-width: 1440px;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
