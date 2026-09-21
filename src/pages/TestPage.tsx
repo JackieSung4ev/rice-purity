@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft, ArrowRight, SkipForward, Check, AlertTriangle, ListFilter } from "lucide-react";
+import { ArrowLeft, ArrowRight, SkipForward, Check, AlertTriangle, ListFilter, Github } from "lucide-react";
 import { useQuiz } from "../features/quiz/quizContext";
 import { useLanguage } from "../i18n/LanguageContext";
 import { AnswerValue } from "../features/quiz/types";
@@ -536,6 +536,38 @@ export const TestPage: React.FC = () => {
                       </span>
                     </button>
                   )}
+
+                  {/* GitHub Repository Link */}
+                  <a
+                    href="https://github.com/JackieSung4ev/rice-purity"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="GitHub Repository (Open Source) / 开源仓库"
+                    aria-label="GitHub Repository"
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      width: "32px",
+                      height: "32px",
+                      borderRadius: "8px",
+                      backgroundColor: "var(--color-surface-hover)",
+                      color: "var(--color-text-secondary)",
+                      border: "1px solid var(--color-border)",
+                      transition: "all 0.15s ease",
+                      textDecoration: "none",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = "var(--color-primary-soft)";
+                      e.currentTarget.style.color = "var(--color-primary)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = "var(--color-surface-hover)";
+                      e.currentTarget.style.color = "var(--color-text-secondary)";
+                    }}
+                  >
+                    <Github size={16} />
+                  </a>
                 </div>
               </div>
 

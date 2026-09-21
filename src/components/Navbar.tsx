@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Sparkles, Globe, Menu, X } from "lucide-react";
+import { Sparkles, Globe, Menu, X, Github } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";
 import { DisplayLanguage } from "../features/quiz/types";
 
@@ -115,8 +115,39 @@ export const Navbar: React.FC = () => {
           </Link>
         </nav>
 
-        {/* Right Action: Language Selector */}
-        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+        {/* Right Action: GitHub Repository & Language Selector */}
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <a
+            href="https://github.com/JackieSung4ev/rice-purity"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GitHub Repository (Open Source) / 开源仓库"
+            aria-label="GitHub Repository"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "38px",
+              height: "38px",
+              borderRadius: "var(--radius-control)",
+              backgroundColor: "var(--color-surface-hover)",
+              border: "1px solid var(--color-border)",
+              color: "var(--color-text)",
+              transition: "all 0.15s ease",
+              textDecoration: "none",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = "var(--color-primary-soft)";
+              e.currentTarget.style.color = "var(--color-primary)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = "var(--color-surface-hover)";
+              e.currentTarget.style.color = "var(--color-text)";
+            }}
+          >
+            <Github size={19} />
+          </a>
+
           <div style={{ position: "relative" }}>
             <button
               onClick={() => setLangDropdownOpen(!langDropdownOpen)}
@@ -222,6 +253,25 @@ export const Navbar: React.FC = () => {
           <Link to="/privacy" onClick={() => setMobileMenuOpen(false)} style={{ padding: "8px 0", fontSize: "1rem", fontWeight: 500, color: "var(--color-text)" }}>
             {language === "bilingual" ? "Privacy 隐私说明" : t.navPrivacy}
           </Link>
+          <a
+            href="https://github.com/JackieSung4ev/rice-purity"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "8px 0",
+              fontSize: "1rem",
+              fontWeight: 500,
+              color: "var(--color-primary)",
+              textDecoration: "none",
+            }}
+          >
+            <Github size={18} />
+            <span>GitHub (Open Source)</span>
+          </a>
         </div>
       )}
 

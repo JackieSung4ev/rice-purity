@@ -90,25 +90,25 @@ npm run preview
 
 ## Verification & Acceptance Checklist
 
-| Category | ID | Check Item | Verification Result |
-|---|---|---|---|
-| **Scoring** | D01 | 100 No answers = 100 score | Passed (Vitest test suite) |
-| **Scoring** | D02 | 100 Yes answers = 0 score | Passed (Vitest test suite, valid 0 score) |
-| **Scoring** | D03 | 28 Yes + 72 No = 72 score | Passed (Vitest test suite) |
-| **Scoring** | D04 | Changing Yes to No increments score by 1 | Passed (Vitest test suite) |
-| **Scoring** | D05 | 28 Yes + 71 No + 1 Skip = Incomplete | Passed (`score = null`) |
-| **Scoring** | D07 | Unvisited distinguished from Skipped | Passed (Distinct tracking) |
-| **Scoring** | D08 | Invalid / corrupted session intercepted | Passed (`validateSession` guard) |
-| **Scoring** | D10 | Draft demo bank does not produce official score | Passed (`reviewStatus: draft`) |
-| **Interaction** | I01 | Single-question view | Passed (Puppeteer desktop & mobile) |
-| **Interaction** | I02 | Rapid double-click protection | Passed (200ms transition lock) |
-| **Interaction** | I07 | Answer details collapsed by default | Passed (Protected by user disclosure) |
-| **Interaction** | I08 | Edit individual answer from results | Passed (Save & Return flow) |
-| **PDF** | P01 | Chinese, English, Bilingual export | Passed (1-page A4 summary) |
-| **PDF** | P02 | Chinese font and punctuation | Passed (Noto Sans SC, zero glyph errors) |
-| **PDF** | P03 | PDF excludes question-by-question breakdown | Passed (Privacy guaranteed) |
-| **Privacy** | S01 | No server uploads, zero external telemetry | Passed (Pure client-side static) |
-| **Visual** | V01 | Responsive scaling (1920px desktop to 390px mobile) | Passed (Fluid clamp typography) |
+| Category        | ID  | Check Item                                          | Verification Result                       |
+| --------------- | --- | --------------------------------------------------- | ----------------------------------------- |
+| **Scoring**     | D01 | 100 No answers = 100 score                          | Passed (Vitest test suite)                |
+| **Scoring**     | D02 | 100 Yes answers = 0 score                           | Passed (Vitest test suite, valid 0 score) |
+| **Scoring**     | D03 | 28 Yes + 72 No = 72 score                           | Passed (Vitest test suite)                |
+| **Scoring**     | D04 | Changing Yes to No increments score by 1            | Passed (Vitest test suite)                |
+| **Scoring**     | D05 | 28 Yes + 71 No + 1 Skip = Incomplete                | Passed (`score = null`)                   |
+| **Scoring**     | D07 | Unvisited distinguished from Skipped                | Passed (Distinct tracking)                |
+| **Scoring**     | D08 | Invalid / corrupted session intercepted             | Passed (`validateSession` guard)          |
+| **Scoring**     | D10 | Draft demo bank does not produce official score     | Passed (`reviewStatus: draft`)            |
+| **Interaction** | I01 | Single-question view                                | Passed (Puppeteer desktop & mobile)       |
+| **Interaction** | I02 | Rapid double-click protection                       | Passed (200ms transition lock)            |
+| **Interaction** | I07 | Answer details collapsed by default                 | Passed (Protected by user disclosure)     |
+| **Interaction** | I08 | Edit individual answer from results                 | Passed (Save & Return flow)               |
+| **PDF**         | P01 | Chinese, English, Bilingual export                  | Passed (1-page A4 summary)                |
+| **PDF**         | P02 | Chinese font and punctuation                        | Passed (Noto Sans SC, zero glyph errors)  |
+| **PDF**         | P03 | PDF excludes question-by-question breakdown         | Passed (Privacy guaranteed)               |
+| **Privacy**     | S01 | No server uploads, zero external telemetry          | Passed (Pure client-side static)          |
+| **Visual**      | V01 | Responsive scaling (1920px desktop to 390px mobile) | Passed (Fluid clamp typography)           |
 
 ---
 
