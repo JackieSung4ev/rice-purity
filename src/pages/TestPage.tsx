@@ -634,19 +634,6 @@ export const TestPage: React.FC = () => {
               >
                 {currentAnswer === "yes" && <Check size={24} />}
                 <span>{language === "bilingual" ? "Yes 有" : t.yesBtn}</span>
-                <span
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "4px",
-                    marginLeft: "6px",
-                  }}
-                  title="Keyboard: Left Arrow or Y"
-                >
-                  <KeyBadge size="md">←</KeyBadge>
-                  <span style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", fontWeight: 600 }}>/</span>
-                  <KeyBadge size="md">Y</KeyBadge>
-                </span>
               </button>
 
               {/* No Button */}
@@ -676,19 +663,6 @@ export const TestPage: React.FC = () => {
               >
                 {currentAnswer === "no" && <Check size={24} />}
                 <span>{language === "bilingual" ? "No 没有" : t.noBtn}</span>
-                <span
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "4px",
-                    marginLeft: "6px",
-                  }}
-                  title="Keyboard: Right Arrow or N"
-                >
-                  <KeyBadge size="md">→</KeyBadge>
-                  <span style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", fontWeight: 600 }}>/</span>
-                  <KeyBadge size="md">N</KeyBadge>
-                </span>
               </button>
             </div>
 
